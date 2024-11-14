@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --accent-color: #199f45;
+  --h-accent: #36c064;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13, 110, 253;
+  --bs-secondary-rgb: 108, 117, 125;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+  --bs-body-bg: #fff;
+}
+.card {
+  border-radius: 0;
+}
+h5.card-title {
+  font-family: var(--bs-font-monospace);
+}
+/*===============Carousel====================**/
+/* .carousel-inner {
+  height: 650px;
+} */
+/*===============Footer icon====================**/
+.footer-icon i {
+  height: 33px;
+  width: 34px;
+  cursor: pointer;
+  background-color: #9f9f9f;
+  border-radius: 2px;
+  font-size: 19px;
+  color: #000;
+  margin-right: -1px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+/*===============Navbar====================**/
+.navbar {
+  background-color: var(--bs-white) !important;
+  font-family: var(--bs-font-sans-serif);
+}
+.navbar-brand {
+  margin-left: 20px;
+}
+/* nav {
+  background-color: yellow;
+} */
+/* Custom styles for spacing */
+.nav-link {
+  margin-right: 45px;
+  /* Adds space to the right of each link */
+}
+
+.calltoaction-wrapper {
+  height: 100px;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.dropdown-menu {
+  /* margin-top: 2000px; */
+  display: none;
+  width: 50px;
+  background-color: none;
+  height: 190px;
+  border: none;
+  color: var(--bs-dark);
+  font-size: 21px;
+  margin-top: 50px;
+  background-color: var(--bs-gray-100);
+}
+.dropdown-menu a {
+  color: var(--bs-dark);
+}
+/* Optional: Change link color on hover 
+    .nav-item.dropdown:hover .nav-link {
+        color: #007bff;*/
+/* Change link color (optional) */
+
+/*optional :smooth transition effect*/
+.dropdown-menu {
+  transition: all 0.3s ease-in-out;
+}
+.belief {
+  height: 300px;
+  background-image: url(../media/images/our-belief.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  background-position: center;
+}
+.vision {
+  height: 300px;
+  background-image: url(../media/images/Vision.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  background-position: center;
+}
+.mission {
+  height: 300px;
+  background-image: url(../media/images/mission.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  background-position: center;
+}
+.event {
+  height: 300px;
+  background-image: url(../media/images/14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  background-position: center;
+}
+.ministries {
+  height: 300px;
+  background-image: url(../media/images/ministry.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 15px;
+  background-position: center;
+}
+.kids {
+  height: 300px;
+}
+.kip {
+  font-size: 15px;
+  word-spacing: 10px;
+  font-weight: 0;
+  font-family: var(--secondary-font);
+  font-weight: 100;
+}
+.row hr {
+  margin-top: 20px;
+  height: 21px;
+}
+.stile {
+  font-family: var(--secondary-font);
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+}
+.btn-primary {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--bs-dark);
+  font-family: var(--bs-font-monospace);
+}
+.text-big {
+  font-size: 60px;
+  word-spacing: -20px;
+}
+.container-fluid h1 {
+  font-family: var(--bs-font-monospace);
+}
+.container-fluid p {
+  font-size: 25px;
+  font-style: italic;
+  font-family: sans-serif;
+}
+.text-content {
+  line-height: 40px;
+  word-spacing: 6px;
+  font-size: 20px;
+}
+
+.dark {
+  color: var(--bs-dark);
+}
+.light {
+  color: var(--bs-light);
+}
+.white {
+  background-color: var(--bs-light);
+}
+.accent {
+  background-color: var(--accent-color);
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--bs-light);
+}
+.height-amend {
+  height: 300px;
+  justify-content: center;
+  display: flex;
+  border: var(--bs-light);
+}
+.height-amend h5 {
+  align-items: center;
+  padding-top: 46px;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.height-amend p {
+  font-size: 20px;
+  font-family: var(--bs-font-monospace);
+}
+
+.carousel-caption {
+  font-size: 30px;
+  color: var(--bs-light);
+  text-align: center;
+  padding-bottom: 350px;
+  font-style: italic;
+}
+.carousel-caption h5 {
+  font-family: var(--bs-font-monospace);
+}
+.color1:hover {
+  background-color: var(--h-accent);
+  border: none;
+  h5 {
+    color: var(--bs-light);
+  }
+  p {
+    color: var(--bs-light);
+  }
+}
+.color2 :hover {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+/*===============Nav bar End====================**/
+/* Enable dropdown on hover */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+/* Custom height for the carousel */
+.carousel-inner {
+  height: 700px;
+  background-position: center;
+}
+.carousel-inner img {
+  height: 100%;
+  background-position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 600px; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 250px; /* Further adjust for very small screens */
+  }
+  .carousel-caption {
+    font-size: 450px;
+    color: var(--bs-light);
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
