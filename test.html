@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scrolling Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+        /* Apply smooth scrolling to the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .section {
+            height: 100vh;
+            /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            border: 1px solid #ddd;
+        }
+    </style>
+    <nav>
+        <a href="#section1">Go to Section 1</a>
+        <a href="#section2">Go to Section 2</a>
+        <a href="#section3">Go to Section 3</a>
+    </nav>
+
+    <div id="section1" class="section" style="background-color: lightblue;">
+        Section 1
+    </div>
+    <div id="section2" class="section" style="background-color: lightgreen;">
+        Section 2
+    </div>
+    <div id="section3" class="section" style="background-color: lightcoral;">
+        Section 3
+    </div>
+</body>
+
+</html>
