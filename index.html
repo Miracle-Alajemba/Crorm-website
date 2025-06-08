@@ -47,9 +47,9 @@
                     <li class="nav-item">
                         <a class="nav-link fs-5 text-uppercase" href="Book.html">Book</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link fs-5 text-uppercase" href="Book.html">Book</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -200,7 +200,7 @@
         <div class="container">
             <h2 class="text-start py-3 fs-1">
                 Other Programs
-                <!-- <hr class="lh-sm" style="margin-left: 280px;"> -->
+                <hr class="lh-sm" style="margin-left: 280px;">
             </h2>
             <div class="row py-3">
                 <div class="col-md-3 ">
@@ -304,7 +304,11 @@
                 </div>
             </div>
             <hr>
-            <p class="bg-dark text-white text-center py-3">&copy; 2024 Your Website. All Rights Reserved.</p>
+            <p class="bg-dark text-white text-center py-3">
+                <script>document.getElementById("year").textcontent = new Date().getFullYear();
+                </script> Your Website. All Rights Reserved.
+            </p>
+            <p class="bg-dark text-white text-center py-3">© <span id="year"></span> Crorm. All rights reserved.</p>
         </div>
     </footer>
     <!-- Bootstrap JS and Popper.js -->
@@ -314,3 +318,6 @@
 </body>
 
 </html>
+<script>
+   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
