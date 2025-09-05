@@ -30,12 +30,12 @@
                     </li>
                     <!-- Hover Dropdown, no button toggle -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link fs-5 text-uppercase" target="_blank" href="Who-we-are.html">Who We are</a>
+                        <a class="nav-link fs-5 text-uppercase"  href="Who-we-are.html">Who We are</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" target="_blank" href="belief.html">Belief</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="mission.html">Mission</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="OurVison.html">Vision</a></li>
-                            <li><a class="dropdown-item" target="_blank" href="Ministries.html">Ministries</a></li>
+                            <li><a class="dropdown-item"  href="belief.html">Belief</a></li>
+                            <li><a class="dropdown-item"  href="mission.html">Mission</a></li>
+                            <li><a class="dropdown-item"  href="OurVison.html">Vision</a></li>
+                            <li><a class="dropdown-item"  href="Ministries.html">Ministries</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -117,7 +117,7 @@
                     <div class="footer-icon">
                         <h5>Connect With Us</h5>
                         <ul class="list-unstyled">
-                            <a href="https://web.facebook.com/nicholasfinneyogbonna" target="_blank"><i
+                            <a href="https://web.facebook.com/nicholasfinneyogbonna" target="_blank" ><i
                                     class="fa-brands fa-facebook"></i></a>
                             <a href="#"><i class="fa-brands fa-twitter"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -142,7 +142,9 @@
                 </div>
             </div>
             <hr>
-            <p class="bg-dark text-white text-center py-3">&copy; 2024 Your Website. All Rights Reserved.</p>
+       <p class="bg-dark text-white text-center py-3">
+  © <span id="year"></span> Crorm. All rights reserved.
+</p>
         </div>
     </footer>
     <!-- Bootstrap JS and Popper.js -->
@@ -152,3 +154,6 @@
 </body>
 
 </html>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>

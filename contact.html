@@ -87,7 +87,7 @@
         </div>
     </section>
 
-    <!--===============================================================footer Start ==============================================-->
+ <!--===============================================================footer Start ==============================================-->
     <footer class="bg-dark text-light py-3 pt-4 pb-2">
         <div class="container">
             <div class="row">
@@ -139,7 +139,9 @@
                 </div>
             </div>
             <hr>
-            <p class="bg-dark text-white text-center py-3">&copy; 2024 Your Website. All Rights Reserved.</p>
+       <p class="bg-dark text-white text-center py-3">
+  © <span id="year"></span> Crorm. All rights reserved.
+</p>
         </div>
     </footer>
     <!-- Bootstrap JS and Popper.js -->
@@ -149,3 +151,6 @@
 </body>
 
 </html>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
